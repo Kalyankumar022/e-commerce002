@@ -1,0 +1,12 @@
+<configuration>
+    <system.webServer>
+        <httpErrors errorMode="Custom">
+            <remove statusCode="403" subStatusCode="-1" />
+            <error statusCode="403" path="/403.html" responseMode="File" />
+            <remove statusCode="402" subStatusCode="-1" />
+            <error statusCode="402" path="/402.html" responseMode="File" />
+            <remove statusCode="503" subStatusCode="-1" />
+            <error statusCode="503" path="/503.html" responseMode="File" />
+        </httpErrors>
+    </system.webServer>
+</configuration>
